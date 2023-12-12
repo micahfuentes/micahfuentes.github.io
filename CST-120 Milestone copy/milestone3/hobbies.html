@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Lora&family=Oswald:wght@200;300;500&family=Playfair+Display:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../navbar2.css">
+    <link rel="stylesheet" href="../style2.css">
+    <script defer src="../functions.js"></script>
+    <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top nav2">
+        <div class="container-fluid">
+          <h1 class="navbar-brand logo2">Micah Fuentes</h1>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title tableOfContents" id="offcanvasNavbarLabel">Table of Contents</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="../milestone1/homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="activePage" href="../milestone3/hobbies.html">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../milestone4/media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../milestone5/education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../milestone5/editing.html">Video Editing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../milestone2/contactme.html">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="headerContainer">
+        <h1 class="logo">Hobbies</h1>
+        <p>My main hobbies include skateboarding, photography/video editing, basketball, and music. </p>
+    </div>
+
+    <img src="../images/skateboard1.jpeg" class="firstImg"/>       
+    <div class="container">
+            <p id="firstDesc">Skateboarding has become one of my most recent hobbies, as I've only been doing it for about a year. It's a lot harder than I imagined it would be. 
+                <br>This is a picture that a friend took of me for one of his photography classes.</p>
+    </div>
+    <div class="container">
+            <p id="secondDesc">Speaking of photography, this was a recent development of mine as well. I started shooting film a little less than a year ago. Here are some of my favorite photos I've taken: </p>
+    </div>  
+        
+        <img src="../images/spaceship.jpeg" class="film1"/>  
+        <img src="../images/skateboardzan.JPG" class="film2"/>    
+        <img src="../images/luke.JPG" class="film2"/>   
+    
+    <div class="container">
+        <p id="thirdDesc">
+            Another hobby that I enjoy is video-editing / montage-making / I'm not sure what you call it. 
+            I just think it's fun to go through all the videos and pictures you've taken over time and putting them all into a minute or so compilation.
+            I made one of these so-called "edits" to cap the spring semester of 2023. <br>
+            <br>Watch it here:
+        </p>
+        <p></p>
+    </div>
+    <div class="youtubeShort">
+        <iframe width="200" height="355" src="https://www.youtube.com/embed/oQVJLKXsL1U" title="Spring 2023 Edit" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+    </div>
+
+        <img src="../images/basketball.jpeg" class="secondImg"/>
+
+    <div class="container">
+        <p>One of the longer hobbies I've had is basketball. I've played basketball since I was about 11 years old and I've loved it ever since.</p>
+    </div>
+    
+    <img src="../images/piano.jpg" class="lastImg"/>  
+        <div class="container">
+            <p>Lastly, in music, I've been playing piano for about ten-ish years now. I've played in recitals and church worship bands, 
+                    but I feel best just playing whatever I want to play. I just recently got a keyboard for my birthday, which is what the picture on the left is from. 
+                    Also, if you hover over
+                        <input class="musicBtn" type="button" value="this" onclick="stop()" onmouseover="play()">
+                        <audio loop id="audio" src="../media/fish.mp3"></audio>
+                
+                , you'll hear a snippet of me messing around on the piano (click it to stop).
+        </div>  
+        
+    
+
+   
+</body>
+</html>

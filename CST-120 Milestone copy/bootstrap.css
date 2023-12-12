@@ -1,0 +1,114 @@
+.vidContainer {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.vidFit {
+    position: relative;
+    width: -webkit-fill-available;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* BOOTSTRAP ACCORDION */
+.accordion {
+    --bs-accordion-btn-bg: #F8F9FA;
+    --bs-accordion-active-bg: #98aa95d9;
+    --bs-accordion-active-color: #F8F9FA;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: #ffffff53;
+    --bs-accordion-border-color: #0000;
+}
+
+.accordion button:hover {
+    transition: .7s;
+}
+
+/* New NAVBAR with Hamburger*/
+.nav2 {
+    margin: auto;
+    color: black;
+    text-decoration: none;
+    font-family: 'Lato', serif;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#activePage {
+    border-bottom: .8px solid rgba(0, 0, 0, 0.793);
+}
+.nav2 a {
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 18px;
+}
+
+.nav2 a:hover {
+    color: rgb(177, 164, 155);
+    padding: 5px;
+    font-size: 20px;
+}
+
+.logo2 {
+        font: small-caps 700 30px 'Playfair Display';
+        pointer-events: none;
+}
+
+.tableOfContents {
+    font: small-caps 500 25px 'Playfair Display';
+    pointer-events: none;
+}
+.sidebar {
+    background-color: #f8f9fa86;
+    backdrop-filter: blur(10px);
+}
+
+/* BOOTSTRAP CARD */
+.cardSize {
+    width: 30%;
+}
+.cardContainer {
+    padding-left: 5%;
+    float: left;
+    margin-right: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+/* CARD BUTTON */
+.cardBtn {
+  background-color: #efefef;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  margin-bottom: 10px;
+  color: #422800;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.cardBtn:hover {
+  background-color: #fff;
+}
+
+.cardBtn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .cardBtn {
+    min-width: 120px;
+    padding: 0 20px;
+  }
+}

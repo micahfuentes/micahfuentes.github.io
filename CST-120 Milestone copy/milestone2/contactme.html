@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Lora&family=Oswald:wght@200;300;500&family=Playfair+Display:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../navbar2.css">
+    <link rel="stylesheet" href="../style2.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top nav2">
+        <div class="container-fluid">
+          <h1 class="navbar-brand logo2">Micah Fuentes</h1>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title tableOfContents" id="offcanvasNavbarLabel">Table of Contents</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="../milestone1/homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../milestone3/hobbies.html">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../milestone4/media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../milestone5/education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../milestone5/editing.html">Video Editing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="activePage" href="../milestone2/contactme.html">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Background -->
+    <img src="../images/contactme.jpeg" alt="Picture I Took" id="Background" style="background-repeat: repeat-y;">
+
+    <div class="headerContainer">
+        <h1 class="logo">Contact Me</h1>
+    </div>
+    <!-- Contact Table -->
+
+    <div>
+        <center>
+        <table class="ContactMeTable">
+            <tr>
+                <th>Email</th>
+                <td>micahf003@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>951-255-2006</td>
+            </tr>
+            <tr>
+                <th>Instagram</th>
+                <td>
+                    <!-- Button -->
+                    <button class="buttonBounce">
+                        <a href="https://instagram.com/kaleofuentes?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank" class="socialMediaButton"> @kaleofuentes</a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th>LinkedIn</th>
+                <td>
+                    <!-- Button -->
+                    <button class="buttonBounce">
+                        <a href="https://www.linkedin.com/in/micah-fuentes-b19b67279" target="_blank" class="socialMediaButton"> Micah Fuentes</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+        </center>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container-lag contactForm">
+      <div class="text-center">
+        <h2>Get in Touch</h2>
+        <p class="lead">Any questions? Fill out this form!</p>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form>
+            <!-- Email Address -->
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="email" class="form-control" id="email" placeholder="e.g. Johndoe@gmail.com">
+            <!-- Name -->
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="e.g. John">
+            <!-- Subject -->
+            <label for="subject" class="form-label">What is your question about?</label>
+            <select class="form-select" id="subject">
+              <option value="website" selected>Website Query</option>
+              <option value="personal">Personal Query</option>
+              <option value="other">Other</option>
+            </select>
+
+            <!-- Query -->
+            <div class="form-floating mb-2 mt-3">
+            <textarea id="query" class="form-control" style="height: 200px"></textarea>
+            <label for="query" class="form-label">Your Query...</label>
+          </div>
+
+          <div class="mb-4 text-center">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

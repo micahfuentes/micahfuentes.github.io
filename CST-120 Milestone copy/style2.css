@@ -1,0 +1,348 @@
+
+/* HOMEPAGE STYLING */
+body {
+    padding-top: 73px;
+    background-color: #F8F9FA !important;
+    overscroll-behavior-y: none;
+}
+
+    /*Personal Website Text*/
+    #homepageA {
+        text-align: left; 
+        margin-top: 120px; 
+        color: aliceblue; 
+        font-size: 70px; 
+        position: sticky;
+        pointer-events: none;
+        font-family: 'Lora', serif;
+    }
+    /* Description Text */
+    #homepageB {
+        text-align: left; 
+        left: auto;
+        color: aliceblue;
+        padding: 8px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 35px;
+        pointer-events: none;
+    }
+    /* Background Styling */
+    #Background {
+        width:100%; 
+        z-index: -1; 
+        position: absolute; 
+        height: auto;
+        object-fit: fill;
+    }
+    /* Fade-in's for Text */
+    .fade-in-object {
+        opacity: 0; 
+        transition: opacity 2s;
+      }
+    
+    .longFadeIn {
+        opacity: 0;
+        transition: opacity 6s;
+    }
+/* END OF HOMEPAGE STYLING */
+
+/* CONTACT PAGE STYLING */
+    .ContactMeTable {
+        border-collapse: separate; 
+        font-family: 'Playfair Display', serif; 
+        font-weight: 100; 
+        margin-top: 100px;
+        width:35%;
+        border-spacing: 10px;
+    }
+    
+    .ContactMeTable th {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: antiquewhite;
+        font-family: 'Lato', serif;
+        border-bottom: solid 2px black;
+        border-right: solid 2px black;
+    }
+    
+    .ContactMeTable td {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Lato', serif;
+        font-weight: 100;
+        border-bottom: solid 1px black;
+        border-right: solid 1px black;
+        background-color: antiquewhite;
+    }
+    
+    .ContactMeTable a {
+        text-decoration: none;
+        color: inherit;
+        font-family: 'Lato', serif;
+    }
+    
+    .ContactMeTable a:hover {
+        color: #6a5959;
+        transition: .5s;
+    }
+    
+    .socialMediaButton {
+        font-family: 'Playfair Display', serif;
+        background-color: rgb(255, 239, 219);
+        border-radius: 2px;
+        border: .5px solid black;
+        border-collapse: separate;
+        border-spacing: 15px;
+        padding: 5px;
+        
+    }
+    
+    .socialMediaButton:hover {
+        background-color: #efefef;
+        transition: .5s;
+    }
+    
+    .buttonBounce {
+      border-width: 0;
+      box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+      font-family: 'Lato', serif;
+        font-weight: 100;
+      height: 25px;
+      padding-left: 0px;
+      padding-right: 0px;
+      transition: box-shadow .15s,transform .15s;
+    }
+    
+    
+    .buttonBounce:hover {
+      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      transform: translateY(-2px);
+    }
+
+    .contactForm {
+        position: relative;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 30px;
+        font-family: 'Lato', serif;
+        font-size: 20px;
+    }
+/* END OF CONTACT PAGE STYLING */
+
+/* HOBBIES PAGE STYLING */
+    .headerContainer {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 50px;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+
+    .headerContainer h1 {
+        font-size: 40px;
+        margin-top: -10px;
+    }
+
+    .container {
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+
+    .container p {
+        line-height: 30px;
+        margin-top: auto;
+        font-size: 20px;
+    }
+
+    #firstDesc {
+        margin-top: 100px;
+    }
+
+    #secondDesc {
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    #thirdDesc {
+        text-align: center;
+    }
+    .firstImg {
+        margin-right: 10px;
+        width: 320px;
+        margin-right: 40px;
+        margin-top: 20px;
+        float: left;
+        margin-left: 100px;
+    }
+
+    /* THREE PHOTOGRAPHY PICTURES */
+
+    .film1 {
+        float: left;
+        width: 35%;
+        vertical-align: top;
+        margin-left: 13%;
+        margin-right: 2%;
+    }
+    .film2 {
+        width: 38%;
+        padding-bottom: 13px;
+
+    }
+
+    .normalStyle {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
+        line-height: 30px;
+    }
+    .youtubeShort {
+        text-align: center;
+    }   
+    .secondImg {
+        padding-left: 10px;
+        width: 320px;
+        padding-left: 40px;
+        float: right;
+        margin-right: 100px;
+        padding-bottom: 50px;
+    }
+    .lastImg {
+        margin-top: 10px;
+        padding-left: 70px;
+        width: 320px;
+        float: left;
+    }
+
+    .musicBtn {
+        position: relative;
+        opacity: 100;
+        font-size: 18px;
+        letter-spacing: 1px;    
+        font-family: 'Playfair Display', serif;
+        background: none;
+}
+
+/* END OF HOBBIES PAGE STYLING */
+
+/* MEDIA PAGE STYLING */
+
+    .horiContainer {
+        position: relative;
+        width: 40%;
+    }
+    .horiContainer:hover .overlay {
+        opacity: .8;
+      }
+
+    .pgContainer {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+    .parent {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    .spanner {
+        display: inline-block;
+    }
+
+  .mediaContainer {
+    position: relative;
+    width: 23%;
+
+  }
+  
+  .mediaImg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:  #efefef;
+  }
+  
+  .mediaContainer:hover .overlay {
+    opacity: .8;
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    line-height: 30px;
+  }
+
+    .newYork {
+        width: 23%;
+        display: block;
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+/* END OF MEDIA PAGE STYLING */
+
+/* VIDEO EDITING STYLING */
+
+.backgroundImg {
+    width:100%; 
+    z-index: -1; 
+    position: fixed;
+    opacity: 50%;
+}
+
+     
+
+/* END OF VIDEO EDTING STYLING */
+
+/* EDUCATION PAGE STYLING */
+
+.firstEduPic{
+    margin-right: 10px;
+    width: 40%;
+    margin-right: 40px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 100px;
+}
+
+.secEduPic {
+    padding-left: 10px;
+    width: 320px;
+    padding-left: 40px;
+    float: right;
+    margin-right: 100px;
+    padding-bottom: 50px;
+    width: 40%;
+}
+
+
+/* END OF EDUCATION PAGE STYLING */
