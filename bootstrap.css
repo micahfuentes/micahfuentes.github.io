@@ -64,8 +64,8 @@
     pointer-events: none;
 }
 .sidebar {
-    background-color: #f8f9fa86;
-    backdrop-filter: blur(10px);
+    background-color: #f8f9faa9;
+    backdrop-filter: blur(20px);
 }
 
 /* BOOTSTRAP CARD */

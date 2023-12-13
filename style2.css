@@ -38,6 +38,13 @@ body {
         height: auto;
         object-fit: fill;
     }
+
+    #background2 {
+    z-index: -1;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    }
     /* Fade-in's for Text */
     .fade-in-object {
         opacity: 0; 
