@@ -39,11 +39,21 @@ body {
         object-fit: fill;
     }
 
+    #background1{
+        z-index: -1;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-image: url("/images/homepagepic.jpeg");
+        background-attachment: fixed;
+    }
+
     #background2 {
     z-index: -1;
     background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
+    background-size:cover;
+    background-image: url("/images/contactme.jpeg");
+    background-attachment: fixed;
+
     }
     /* Fade-in's for Text */
     .fade-in-object {
@@ -55,6 +65,7 @@ body {
         opacity: 0;
         transition: opacity 6s;
     }
+
 /* END OF HOMEPAGE STYLING */
 
 /* CONTACT PAGE STYLING */
@@ -138,6 +149,9 @@ body {
         margin-top: 30px;
         font-family: 'Lato', serif;
         font-size: 20px;
+    }
+    .paddingTop {
+        padding-top: 10px;
     }
 /* END OF CONTACT PAGE STYLING */
 

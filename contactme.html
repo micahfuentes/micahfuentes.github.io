@@ -19,8 +19,9 @@
     </script>
 
     <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body id="background2">
     
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top nav2">
@@ -108,28 +109,49 @@
         <h2>Get in Touch</h2>
         <p class="lead">Any questions? Fill out this form!</p>
       </div>
-
       <div class="row justify-content-center my-5">
-        <div class="col-lg-6">
-          <form>
+        
+        <div class="col-lg-6 bg-light bg-gradient border rounded paddingTop">
+          <form method="POST" action="https://postman-echo.com/post">
             <!-- Email Address -->
-            <label for="email" class="form-label">Email Address:</label>
-            <input type="email" class="form-control" id="email" placeholder="e.g. Johndoe@gmail.com">
+            <div class="form-group row">
+            <label for="email" class="col-form-label">Email Address:</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill"></i>
+              </span>
+              <input type="email" class="form-control" id="email" name="email" placeholder="e.g. Johndoe@gmail.com">
+            </div>
+          </div>
             <!-- Name -->
-            <label for="name" class="form-label">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="e.g. John">
+            <div class="form-group row">
+            <label for="name" class="col-form-label">Name:</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill"></i>
+              </span>
+              <input type="text" class="form-control" id="name" name="name" placeholder="e.g. John">
+            </div>
+          </div>
+            
             <!-- Subject -->
-            <label for="subject" class="form-label">What is your question about?</label>
-            <select class="form-select" id="subject">
-              <option value="website" selected>Website Query</option>
-              <option value="personal">Personal Query</option>
-              <option value="other">Other</option>
-            </select>
+            <div class="form-group row">
+            <label for="subject" class="col-form-label">What is your question about?</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-chat-left-dots-fill"></i>
+              </span>
+              <select class="form-select" id="subject" name="subject">
+                <option value="Website Question" selected>Website Query</option>
+                <option value="Personal Question">Personal Query</option>
+                <option value="Other Question">Other</option>
+              </select>
+            </div>
+          </div>
 
             <!-- Query -->
-            <div class="form-floating mb-2 mt-3">
-            <textarea id="query" class="form-control" style="height: 200px"></textarea>
-            <label for="query" class="form-label">Your Query...</label>
+            <div class="form-floating mb-2 mt-3 form-group-row">
+            <textarea id="message" name="message" class="form-control" style="height: 200px"></textarea>
           </div>
 
           <div class="mb-4 text-center">
@@ -140,5 +162,6 @@
         </div>
       </div>
     </div>
+
 </body>
 </html>
