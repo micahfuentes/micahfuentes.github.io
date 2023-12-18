@@ -9,25 +9,26 @@ body {
     /*Personal Website Text*/
     #homepageA {
         text-align: left; 
-        margin-top: 120px; 
+        /* margin-top: 120px;  */
+        margin-top: 10vh;
         color: aliceblue; 
-        font-size: 70px; 
+        font-size: 5vw; 
         position: sticky;
         pointer-events: none;
-        font-family: 'Lora', serif;
+        font-family: 'Playfair Display', serif;
     }
     /* Description Text */
     #homepageB {
         text-align: left; 
         left: auto;
         color: aliceblue;
-        padding: 8px;
+        padding: 10px;
         border-radius: 5px;
-        margin-top: 20px;
+        margin-top: 2vh;
         font-family: 'Lora', serif;
         font-weight: 400;
-        font-size: 25px;
-        line-height: 35px;
+        /* font-size: max(20px, 3vw); */
+        font-size: clamp(16px, 4vw, 22px);
         pointer-events: none;
     }
     /* Background Styling */
